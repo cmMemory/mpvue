@@ -3,7 +3,7 @@ module.exports = [
         path: '/pages/index/index',
         name: 'index',
         config: {
-            navigationBarTitleText: '惠下单惠小店'
+            navigationBarTitleText: '首页'
         }
     },
     {

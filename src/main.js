@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import App from './App';
-// import MpvueRouterPatch from 'mpvue-router-patch';
+import MpvueRouterPatch from 'mpvue-router-patch';
 // import DUSdk from '@/utils/du_mp_sdk_mpvue/du_mp_sdk_mpvue.js';
 Vue.config.productionTip = false;
 App.mpType = 'app';
-// Vue.use(MpvueRouterPatch);
+Vue.use(MpvueRouterPatch);
 const app = new Vue(App);
 // Vue.prototype.globalData = { DUSdk: DUSdk };
 app.$mount();
@@ -17,7 +17,7 @@ export default {
         window: {
             backgroundTextStyle: 'light',
             navigationBarBackgroundColor: '#EC2500',
-            navigationBarTitleText: '惠下单惠小店',
+            navigationBarTitleText: '小程序',
             navigationBarTextStyle: 'white'
         },
         tabBar: {
@@ -27,7 +27,7 @@ export default {
             list: [
                 {
                     pagePath: 'pages/index/index',
-                    text: '惠小店',
+                    text: '首页',
                     iconPath: 'static/imgs/hui-store.png',
                     selectedIconPath: 'static/imgs/hui-store_select.png'
                 }, {
